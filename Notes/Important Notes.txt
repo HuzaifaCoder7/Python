@@ -1,0 +1,20 @@
+1: "is" keyword in python refers to exact location of object in memory it is used for identity but "==" refers to value. There functionality   is same they are both used for comparison in Python.
+
+2: Class is blueprint but Object is instance e.g animal is class but cat, dog are seperate objects which uses animal class.
+
+3: OOP is used to map real world entities.
+
+4: Self parameter is a reference to the current instance of the class, and it is used to access variables that belongs to the class.
+   ( Self ka matlab wo object jispar ye method call kiya ja rha hai )
+
+5: Constructor is a special method in class used to create and initialize an object of a class.
+
+      
+6: self
+     | 
+   object = className()
+   This self will be first argument of constructor.It always return None means return nothing.
+
+7: Decorators in python is used to modify function.It takes function as an input.
+
+8: *args is used for get tuple and **args used to get dict.
