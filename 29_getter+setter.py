@@ -1,19 +1,20 @@
-class test:
-    def __init__(self,value):
-        self.value = value
-    
-    def show(self):
-        print(f"Value is {self.value} :")
+class MyClass:
+    def __init__(self, value):
+        self.modifiedValue = value
+
     @property
-    def newValue(self):
-        return self.value
-    @newValue.setter
-    def newValue(self,newval):
-        self.value = val
+    def value(self):
+        return self.modifiedValue
 
-val1 = test(47)
-# val1.newValue = 8 --> Gives error
-print(val1.newValue)
-val1.show()
+    @value.setter
+    def value(self, new_value):
+        self.modifiedValue = new_value
 
-#! You can use "@property" for getter and "@methodName.setter" for setter
+obj = MyClass(10)
+obj.value = 47 #? With no setter you cannot set value 
+print(obj.value)
+
+
+
+#! You can use "@property" for getter and "@methodName.setter" for setter.
+#! Function name of Getter and Setter should be same with value name.
